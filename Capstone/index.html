@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>869Transports</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h1>869Transports</h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul><b>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="taxi&uber.html">TAXI & UBER</a></li>
+                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="map.html">MAP</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li></b>
+                    <li><strong><a href="activities.html">ACTIVITIES</a></strong></li></b>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>SKNs Most Recent Transport Site</h1>
+            <b><p>869Transports is here to provide you with<br> easy access to all transport services<br> in St. Kitts and Nevis.</p></b>
+        </div>
+    </section>
+
+        <!---- Systems ---->
+
+    <section class="systems">
+        <h1>Transport Systems</h1>
+        <p>Below is a list of all transport systems available in St. Kitts and Nevis</p>
+        
+        <div class="row">
+            <div class="systems-col">
+                <h3>Uber</h3>
+                <p>We have a number of private drivers who won't charge much.<br>
+                    You give them your location and you're off to your destination in quick timing.</p>
+            </div>
+
+            <div class="systems-col">
+                <h3>Taxi</h3>
+                <p>There are numerous taxis,<br> waiting for your signal.<br>
+                Throughout your trip you<br> will be encouraged to<br> engage in chit-chat</p>
+            </div>
+
+            <div class="systems-col">
+                <h3>Car Rentals</h3>
+                <p>We have a number of car rental<br> services,
+                You can book a rental<br> ahead of time if,
+                you are coming<br> from another country, 
+                or, you<br> can use a transport service <br>
+                to get you to the rental location.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+            <div><a href="" class="hero-btn">Find drivers in your area..</a></div>
+    </section>
+    <footer><i class="fa fa-chevron-circle-up"></i></footer>
+
+<!------JavaScript for Toggle Menu------>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', 'Bigshot One', serif
+}
+.header{
+    min-height: auto;
+    width: 100%;
+    background-color: gray;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 10%;
+    border-radius: 10%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+} 
+@media(max-width: 700px){
+    nav img{
+        width: 50px;
+    }
+}
+
+/*Activities section*/
+
+
+.activities{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    font: oblique;
+}
+p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row img{
+    width: 300px;
+    border-radius: 10%;
+    min-height: 200px;
+}
+.col{
+    flex-basis: 31%;
+    background: rgba(127, 140, 141,0.5);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    max-height: 400%;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 15px 0;
+    font-size: 20px;
+}
+.description{
+    text-align: justify;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 10px;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0.2);
+}
+.see-more{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    border: 1px solid white;
+    border-radius: 5%;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+}
+.see-more:hover{
+    border: 1px solid blue ;
+    background: purple;
+    transition: 1s;
+}
+@media(max-width: 700px){
+    .activities{
+        width: 80%;
+    }
+    .activities h1{
+        font-size: 40px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row img{
+        width: 250px;
+        min-height: 150px;
+    }
+    .description{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', 'Bigshot One', serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/banner.144399870.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    font-family: Arial;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+ nav h1{
+    font-size: 180%;
+    font-style: oblique;
+    color: #fffacd;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#fffacd;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    width:     0%;
+    height: 2.5px;
+    background: #ff4500;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fffacd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size:62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size:14px;
+    color:#fffacd;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid yellow;
+    background:yellow;
+    transition: 1s;
+}
+
+/*------ history -------*/
+
+.history{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.history{ 
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(40, 155, 11, 0.7),rgba(238, 255, 7, 0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+h1{
+    font-style: oblique;
+    font-size: 45px;
+    font-weight: 600;
+
+}
+.history p{
+    color:#000;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    padding:10px;
+
+}
+/*------ reviews------*/
+
+.reviews{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.reviews{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.reviews p{
+    color:#fffacd;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 25px;
+    padding:10px;
+} 
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.review-col{
+    flex-basis: 31%;
+    background:transparent;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding-top: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    font-size: 22px;
+    text-align:center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #708090;
+}
+.review-col{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.hero-btn{
+    text-align: left;
+
+}
